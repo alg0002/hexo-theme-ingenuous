@@ -5,15 +5,14 @@
       <% if (theme.about.author) { %>
         <p> <%- config.author %> </p>
       <% } %>
-      <% if (theme.about.twitter) { %>
-        <p> <a href="http://twitter.com/<%- theme.twitter %>">@<%- theme.twitter %></a> </p>
-      <% } %>
-      </p>
-      <% if (theme.about.aboutme) { %>
-        <p> <%- theme.aboutme %> </p>
-      <% } %>
       <% if (theme.about.description) { %>
         <p> <%- config.description %> </p>
+      <% } %>
+      <% if (theme.about.twitter) { %>
+        <p> Twitter: <a href="https://twitter.com/<%- theme.twitter %>" target="_blank">@<%- theme.twitter %></a> </p>
+      <% } %>
+      <% if (theme.about.aboutme) { %>
+        <p> <%- theme.aboutme %> </p>
       <% } %>
     </div>
   </div>
